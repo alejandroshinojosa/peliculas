@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Describe tu película aquí.
+        </h1>
+    </header>
+    <main>
+        <form id="enviasion">
+            <label for="title">Título</lable>
+            <input type="text" id="title" name="titulo" required>
+            <label for="year"> Año</lable>
+            <input type="number" id="year" name="numero" min="1800" max="9999" required>
+            <label for="descrip">Descripción</lable>
+            <input type="text" id="descrip" name="desc" required>
+            <label for="image">Imagen</lable>
+            <input type="url" id="image" name="imagen" required>
+            <label for="genero">Género</lable>
+            <select id="genero" name="genero">
+                <option value="Comedia">Comedia</option>
+                <option value="Terror">Terror</option>
+                <option value="Accion">Acción</option>
+                <option value="Romantica">Romántica</option>
+            </select>
+        </form>
+        <button type="submit">Poner nueva película</button>
+    </main>
+    <script defer src="script.js"></script>
+</body>
+</html>

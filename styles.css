@@ -1,0 +1,35 @@
+/*parte de arriba*/
+
+header{
+    display: flex;
+    background-color: crimson;
+    justify-content: center;
+    
+}
+
+
+/*Formulario*/
+
+label{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    @media (min-width: 300px){
+        width: 500px;
+        height: 400px;
+    }
+}
+
+
+
+button{
+    width: 100px;
+    height: 80px;
+    background-color: darkred;
+    margin: 40px;
+}
+input, select{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
